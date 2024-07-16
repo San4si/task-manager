@@ -60,12 +60,16 @@ Após iniciar os servidores backend e frontend, você pode acessar o aplicativo 
 ### Testando a API
 Para testar as operações CRUD da API backend, você pode utilizar ferramentas como Postman ou simplesmente realizar requisições HTTP diretamente.
 
-Exemplos de Endpoints da API
-GET /todos: Retorna todas as tarefas.
-POST /todos: Cria uma nova tarefa.
-PUT /todos/
+Endpoints da API
+GET /todos
+: Retorna todas as tarefas
+GET /todos/:id
+: Retorna todas as tarefas por id.
+POST /todos
+: Cria uma nova tarefa.
+PUT /todos/:id
 : Atualiza uma tarefa existente.
-DELETE /todos/
+DELETE /todos/:id
 : Remove uma tarefa existente.
 
 ### Contribuição
