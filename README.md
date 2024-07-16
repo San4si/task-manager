@@ -23,6 +23,7 @@ git clone https://github.com/seu-usuario/task-manager.git
 cd task-manager
 
 ### Configurar e Rodar o Backend
+
 Instalar Dependências do Backend:
 
 Navegue até o diretório do backend e instale as dependências:
