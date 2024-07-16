@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://i.imgur.com/lcTReQq.jpg'); /* URL da imagem */
+  background-size: contain; /* Ajusta o tamanho para cobrir todo o elemento */
+  background-position: center;
+  background-repeat: repeat; /* Evita repetição da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semitransparente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input {
+  flex: 1;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li .task-view,
+li .task-edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+li .task-edit input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+li .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+li .btn-save,
+li .btn-cancel,
+li .btn-edit,
+li .btn-delete {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li .btn-save:hover,
+li .btn-cancel:hover,
+li .btn-edit:hover,
+li .btn-delete:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  input {
+    margin: 0 0 10px 0;
+  }
+
+  ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li .task-view,
+  li .task-edit {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li .button-group button {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
